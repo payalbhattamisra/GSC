@@ -1,3 +1,15 @@
+// Get the register button element
+const registerButton = document.getElementById('registerButton');
+
+// Add a click event listener to the register button
+registerButton.addEventListener('click', function() {
+    // Redirect to the registration page
+    window.location.href = 'registration.html';
+});
+
+
+
+
 const express = require('express');
 const app = express();
 
