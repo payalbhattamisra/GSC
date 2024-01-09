@@ -1,67 +1,46 @@
-
-const registerButton = document.getElementById('registerButton');
-
-// Add a click event listener to the register button
-registerButton.addEventListener('click', function() {
-    // Redirect to the registration page
-    window.location.href = 'registration.html';
-});
-var express = require("express");
-var bodyParser = require("body-parser");
-var mongoose = require("mongoose");
-
+const express = require('express');
 const app = express();
 
-app.use(bodyParser.json());
+const path = require('path');
+const hbs = require('hbs');
+const collection = require('./payal/GDSC-Backend/mongodb');
+const templatepath = path.join(__dirname, '../templates');
+
+app.use(express.json());
+app.set('view engine', 'hbs');
+app.set("views", templatepath);
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(express.urlencoded({ extended: false }));
 
-mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true, useUnifiedTopology: true });
+// app.get('/home', (req, resp) => {
+//     resp.render('home');
+// });
 
-var db = mongoose.connection;
-
-db.on('error', (err) => {
-  console.error("Error in connecting to Database:", err);
+app.get('/signup', (req, resp) => {
+    resp.render('signup');
 });
 
-db.once('open', () => {
-  console.log("Connected to Database");
+app.post('/signup', async (req, resp) => {
+    const { Name, City, Type, Quantity, Location, Price } = req.body;
+
+    try {
+        const data = {
+            Name,
+            City,
+            Type,
+            Quantity,
+            Location,
+            Price
+        };
+
+        await collection.create(data);
+        // resp.json({ message: "Signup successful" });
+        resp.render('home');
+    } catch (error) {
+        resp.status(500).json({ error: "Internal server error" });
+    }
 });
 
-app.post("/signup", async (req, res) => {
-  try {
-    var Name = req.body.Name;
-    var City = req.body.City;
-    var Location = req.body.Location;
-    var Type = req.body.Type;
-    var Quantity = req.body.Quantity;
-    var Frequency = req.body.Frequency;
-    var Price = req.body.Price;
-
-    var data = {
-      "Name": Name,
-      "City": City,
-      "Type": Type,
-      "Quantity": Quantity,
-      "Frequency": Frequency,
-      "Price": Price
-    };
-
-    await db.collection('users').insertOne(data);
-    console.log("Record Inserted Successfully");
-  } catch (err) {
-    console.error("Error inserting record:", err);
-    res.status(500).send("Internal Server Error");
-  }
+app.listen(5000, () => {
+    console.log("Server is running on port 5000");
 });
-
-app.get("/", (req, res) => {
-  res.set({
-    "Allow-access-Allow-Origin": '*'
-  });
-  return res.redirect('index.html');
-}).listen(3000);
-
-console.log("Listening on PORT 3000");
