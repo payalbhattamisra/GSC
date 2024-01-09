@@ -3,7 +3,7 @@ const app = express();
 
 const path = require('path');
 const hbs = require('hbs');
-const collection = require('./payal/GDSC-Backend/mongodb');
+const collection = require('./mongodb');
 const templatepath = path.join(__dirname, '../templates');
 
 app.use(express.json());
