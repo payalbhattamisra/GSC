@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_35c27dba50b30c015f1effd0908a7278 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_35c27dba50b30c015f1effd0908a7278" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_35c27dba50b30c015f1effd0908a7278 = L.map(
+                "map_35c27dba50b30c015f1effd0908a7278",
+                {
+                    center: [20.0, 84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4a20aec794adb00064094db513fbb63e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4a20aec794adb00064094db513fbb63e.addTo(map_35c27dba50b30c015f1effd0908a7278);
+        
+    
+            var feature_group_afa90cc3b40b36c6cc9d59e5d51028bb = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_2b7925e3c119a7e9b5f447bbb3d53d37 = L.marker(
+                [11.6645348, 92.7390448],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_f2b4109110ef658c8d1a58ddd123e57d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2b7925e3c119a7e9b5f447bbb3d53d37.setIcon(icon_f2b4109110ef658c8d1a58ddd123e57d);
+        
+    
+        var popup_d6a8a3950b0c2506208d50cfadb9ad42 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_91858ee52c99f913d66a4bc345b549c9 = $(`<div id="html_91858ee52c99f913d66a4bc345b549c9" style="width: 100.0%; height: 100.0%;"><h2>Port Blair, Andaman and Nicobar Islands, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_d6a8a3950b0c2506208d50cfadb9ad42.setContent(html_91858ee52c99f913d66a4bc345b549c9);
+            
+        
+
+        marker_2b7925e3c119a7e9b5f447bbb3d53d37.bindPopup(popup_d6a8a3950b0c2506208d50cfadb9ad42)
+        ;
+
+        
+    
+    
+            var marker_f4483054539ba82d8bfeeb88bfcbb1b0 = L.marker(
+                [16.5096679, 80.5184535],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_2a2ede8201aaddef3ffab250e12ba4b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f4483054539ba82d8bfeeb88bfcbb1b0.setIcon(icon_2a2ede8201aaddef3ffab250e12ba4b2);
+        
+    
+        var popup_f527a38fefeac81db7201d2d6ad7b6d0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_69815d93c40200a721cf880c3808520b = $(`<div id="html_69815d93c40200a721cf880c3808520b" style="width: 100.0%; height: 100.0%;"><h2>Amaravati, Andhra Pradesh, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_f527a38fefeac81db7201d2d6ad7b6d0.setContent(html_69815d93c40200a721cf880c3808520b);
+            
+        
+
+        marker_f4483054539ba82d8bfeeb88bfcbb1b0.bindPopup(popup_f527a38fefeac81db7201d2d6ad7b6d0)
+        ;
+
+        
+    
+    
+            var marker_0fa7f656abffad1d72d8da68ff736b3f = L.marker(
+                [27.0979659, 93.6237291],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_5a04280515b0e42128639868dbd19bba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0fa7f656abffad1d72d8da68ff736b3f.setIcon(icon_5a04280515b0e42128639868dbd19bba);
+        
+    
+        var popup_5345a19280f00af283edd74b226c40c3 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_060b02fb2dc8236d01b6e20f8eab3e45 = $(`<div id="html_060b02fb2dc8236d01b6e20f8eab3e45" style="width: 100.0%; height: 100.0%;"><h2>Itanagar, Arunachal Pradesh, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_5345a19280f00af283edd74b226c40c3.setContent(html_060b02fb2dc8236d01b6e20f8eab3e45);
+            
+        
+
+        marker_0fa7f656abffad1d72d8da68ff736b3f.bindPopup(popup_5345a19280f00af283edd74b226c40c3)
+        ;
+
+        
+    
+    
+            var marker_a781291dbd31cab167b0abe3b93e215f = L.marker(
+                [26.1513079, 91.79338049525902],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_922e62268ed90105be7bf520b53cf5d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a781291dbd31cab167b0abe3b93e215f.setIcon(icon_922e62268ed90105be7bf520b53cf5d2);
+        
+    
+        var popup_f2c7324ef6bf2481f581f8bad1b5d433 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3b2a3bc1a3314ac912ad4c5b497cd390 = $(`<div id="html_3b2a3bc1a3314ac912ad4c5b497cd390" style="width: 100.0%; height: 100.0%;"><h2>Dispur, Assam, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_f2c7324ef6bf2481f581f8bad1b5d433.setContent(html_3b2a3bc1a3314ac912ad4c5b497cd390);
+            
+        
+
+        marker_a781291dbd31cab167b0abe3b93e215f.bindPopup(popup_f2c7324ef6bf2481f581f8bad1b5d433)
+        ;
+
+        
+    
+    
+            var marker_f22a783507ebd0845affd92a9c1db6bf = L.marker(
+                [25.6093239, 85.1235252],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_4e2c7f2f78efffed77d3bcb3ba22d8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f22a783507ebd0845affd92a9c1db6bf.setIcon(icon_4e2c7f2f78efffed77d3bcb3ba22d8de);
+        
+    
+        var popup_2e01263b6d3a3b2b97e9d8c11e66cc8a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c1876c4f722ecf521dbabf83b49d15c8 = $(`<div id="html_c1876c4f722ecf521dbabf83b49d15c8" style="width: 100.0%; height: 100.0%;"><h2>Patna, Bihar, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_2e01263b6d3a3b2b97e9d8c11e66cc8a.setContent(html_c1876c4f722ecf521dbabf83b49d15c8);
+            
+        
+
+        marker_f22a783507ebd0845affd92a9c1db6bf.bindPopup(popup_2e01263b6d3a3b2b97e9d8c11e66cc8a)
+        ;
+
+        
+    
+    
+            var marker_4474d652cf98680d95d09a74bb617be2 = L.marker(
+                [30.72984395, 76.78414567016054],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_5033372a3d4c1cba43d0a6ee31a6928d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4474d652cf98680d95d09a74bb617be2.setIcon(icon_5033372a3d4c1cba43d0a6ee31a6928d);
+        
+    
+        var popup_9c0f643178f764ae0c489e860b77b9c5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_33bd2aeddc995315b6bb2766a53a9d53 = $(`<div id="html_33bd2aeddc995315b6bb2766a53a9d53" style="width: 100.0%; height: 100.0%;"><h2>Chandigarh, Chandigarh, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_9c0f643178f764ae0c489e860b77b9c5.setContent(html_33bd2aeddc995315b6bb2766a53a9d53);
+            
+        
+
+        marker_4474d652cf98680d95d09a74bb617be2.bindPopup(popup_9c0f643178f764ae0c489e860b77b9c5)
+        ;
+
+        
+    
+    
+            var marker_ba14a29dbdabbac7cd42be6e6d0d8680 = L.marker(
+                [20.2602964, 85.8394521],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_3497547e1fdc63a91fd315c2c43f2aa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ba14a29dbdabbac7cd42be6e6d0d8680.setIcon(icon_3497547e1fdc63a91fd315c2c43f2aa9);
+        
+    
+        var popup_1c8ebb896ced591239672d58851ec484 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_eca498e8dbe733adf261bcc2c617a221 = $(`<div id="html_eca498e8dbe733adf261bcc2c617a221" style="width: 100.0%; height: 100.0%;"><h2>Bhubaneswar, Odisha, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_1c8ebb896ced591239672d58851ec484.setContent(html_eca498e8dbe733adf261bcc2c617a221);
+            
+        
+
+        marker_ba14a29dbdabbac7cd42be6e6d0d8680.bindPopup(popup_1c8ebb896ced591239672d58851ec484)
+        ;
+
+        
+    
+    
+            var marker_1a5ead17d5a259a74b2d10c0faf27e72 = L.marker(
+                [20.2560286, 85.8400528],
+                {}
+            ).addTo(feature_group_afa90cc3b40b36c6cc9d59e5d51028bb);
+        
+    
+            var icon_9fe188578b0225bd089efe90a3f9724a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1a5ead17d5a259a74b2d10c0faf27e72.setIcon(icon_9fe188578b0225bd089efe90a3f9724a);
+        
+    
+        var popup_364d7f5618554331d6fba7dc89964902 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5327eab4658887cfebec06b31b9188d8 = $(`<div id="html_5327eab4658887cfebec06b31b9188d8" style="width: 100.0%; height: 100.0%;"><h2>Kalpana Square Road, Bhubaneswar, Odisha, India</h2><br/>                             <b>Hello Industrialist come up with plastics</b><br/>                             <img src="https://example.com/default_image.jpg" alt="Image" style="max-width:100%;max-height:100%"></div>`)[0];
+                popup_364d7f5618554331d6fba7dc89964902.setContent(html_5327eab4658887cfebec06b31b9188d8);
+            
+        
+
+        marker_1a5ead17d5a259a74b2d10c0faf27e72.bindPopup(popup_364d7f5618554331d6fba7dc89964902)
+        ;
+
+        
+    
+    
+            feature_group_afa90cc3b40b36c6cc9d59e5d51028bb.addTo(map_35c27dba50b30c015f1effd0908a7278);
+        
+    
+            var layer_control_8a12647a7a203db74ba8b7159babce58_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4a20aec794adb00064094db513fbb63e,
+                },
+                overlays :  {
+                    "circles" : feature_group_afa90cc3b40b36c6cc9d59e5d51028bb,
+                },
+            };
+            let layer_control_8a12647a7a203db74ba8b7159babce58 = L.control.layers(
+                layer_control_8a12647a7a203db74ba8b7159babce58_layers.base_layers,
+                layer_control_8a12647a7a203db74ba8b7159babce58_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_35c27dba50b30c015f1effd0908a7278);
+
+        
+</script>
+</html>
