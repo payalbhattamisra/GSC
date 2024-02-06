@@ -128,16 +128,30 @@ padding: 9px 4px 4px 8px;
 .left2{
   height:100%;
   width:50%;
-  /* background-color: blue; */
-  background-color: #008ab7;
+  background-color: blue;
+  /* background-color: #008ab7; */
   padding-left: 180px;
   justify-content: center;
+  clip-path: polygon(8% 27%, 48% 0, 89% 26%, 89% 70%, 52% 99%, 8% 72%);
+
 }
 .left2>img{
-    width:70%;
+    /* width:70%;
     height:98% ;
-     
-    background-image: cover;
+      */
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+
+     /* background-image: cover; */
+}
+.left2>img:hover{
+    filter: saturate(2);
+    transform: scale(1.03);
+    cursor: pointer;
 }
 .right2{
     height:100%;
@@ -164,15 +178,22 @@ padding: 9px 4px 4px 8px;
     display: flex;
     padding:15px 15px 15px 15px;
     justify-content: center;
+    gap: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+}
+#registerButton{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     
 }
 .button2>button{
     
-    height:50%;
-    width:10%;
+    height:70%;
+    width:15%;
     border-radius: 15px;
     margin-right: 10px;
     font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .first3{
     height:8vh;
@@ -283,6 +304,7 @@ width:80%;
      justify-content: space-around;
      padding-left: 10px;
      color: white;
+     font-family:cursive
  }
  .footer{
     height:67.5vh;
@@ -335,4 +357,14 @@ width:80%;
     font-size: 1rem;
     /* text-transform: uppercase; */
     line-height: 26px;
+}
+.box img:hover {
+    filter:saturate(2);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.bx img:hover {
+    filter:saturate(2);
+    transform: scale(1.03);
+    cursor: pointer;
 }
