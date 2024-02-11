@@ -368,3 +368,6 @@ width:80%;
     transform: scale(1.03);
     cursor: pointer;
 }
+#chatbotButton{
+    font-size: 18px;
+}
