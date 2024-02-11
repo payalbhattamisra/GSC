@@ -47,7 +47,7 @@
 </div>
     <div class="button2">
       <button id="registerButton">REGISTER</button>
-        <button>VENDORS NEAR BY</button>
+        <button id="openMapButton">VENDORS NEAR BY</button>
     </div>
      <div class="first3">
         <div class="nav2">
@@ -163,5 +163,27 @@
     </div>
 </div>
  <script src="index.js"></script>
+ <script>
+ 
+
+document.getElementById("openMapButton").addEventListener("click", function() {
+// Handle the click event for the VENDORS NEAR BY button
+// Open the generated map in a new tab/window
+window.open("output.html", "_blank");
+});
+
+window.addEventListener("popstate", function(event) {
+// Check if the current URL matches the URL of the map page
+if (window.location.pathname.endsWith("output.html")) {
+  // Redirect to the home page if the user navigates back from the map page
+  window.location.href = "index.html";
+}
+});
+
+document.getElementById("chatbotButton").addEventListener("click", function() {
+// Open the chatbot in a new browser window or tab
+window.open("chatbot.html", "_blank");
+});
+</script>
 </body>
 </html>
