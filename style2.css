@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content{
+    width: 100vw;
+    background-color :#008ab7;;
+}
+.heading{
+    background-color: white;
+    color:#0a3e4f;
+    text-align: center;
+    padding: 5px;
+}
+.write{
+    padding: 20px 40px 20px 40px;
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+}
+.vaquita,.whale,.yangtz,.hawaiian,.Turtles,.giant{
+    width: 100vw;
+    height: 50vh;
+    background-color:#008ab7;
+    display: flex;
+    color: white;
+}
+.left1,.right2,.left3,.right4,.left5,.right6{
+    height:44vh;
+    width:50vw;
+    margin-left: 6vw;
+    text-align: justify;
+    /* background-color: #337ab7; */
+    color: white;
+}
+.left{
+    list-style: none;
+    padding-right: 15px;
+    color: white;
+}
+.subheading,.subheading2{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 3.5vh;
+    /* color: rgb(36, 8, 8); */
+    padding-top: 0px;
+    padding-bottom: 10px;
+    width:470px;
+}
+.right1,.right3,.right5{
+ height:35vh;
+ width:30vw;
+ /* background-color:#fcd21c; */
+}
+.right1>img,.right3>img,.right5>img{
+     
+    height:34.2vh;
+    width:40vw;
+    background-size: cover;
+}
+.h,.h2,.h3,.h4,.h5,.h6{
+    height:31px;
+    width:100%;
+    text-align: left;
+    padding-left: 55px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    color:#0a3e4f;
+    font-size: 24px;
+    /* background-color: greenyellow; */
+    /* background-color: white; */
+ }
+   .left2,.left4,.left6{
+    height:30vh;
+     width:40vw;
+     /* background-color:#fcd21c; */
+ }
+.left2>img,.left4>img,.left6>img{
+    padding-left: 70px;
+   /* height:100%;
+   width:100%;  */
+    height:29.2vh;
+   width:40vw;
+   background-size: cover;
+}  
+ .url{
+    font-size: 17px;
+     text-align: center;
+    height: 20px;
+ }
+ .url a{
+    color: white;
+ }
